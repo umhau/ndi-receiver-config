@@ -11,5 +11,16 @@
 
 ## use
 
-    bash play.sh 'NDI source'
+    bash startmachine.sh 3 # i.e. machine ndi03
     bash list_sources.sh
+    bash play.sh 'NDI source'
+    
+## setup 
+
+    bash ./autologin.sh
+    bash ./runasroot.sh
+
+On the master controller, 
+
+    bash sshconfig.sh
+
