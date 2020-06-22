@@ -1,17 +1,33 @@
 # NDI CONTROL
 
+## hardware addresses 
+
+All logins are 
+
+    ndi::adclare55ndi03
+
+The addresses of the three (so far) NDI recievers are: 
+
+   ndi02 | 78:45:c4:13:be:9e | 192.168.1.112 | 
+   ndi03 | 00:1d:09:8e:e1:36 | 192.168.1.80  | small screen upstairs
+   ndi04 | c8:1f:66:1c:97:ee | 192.168.1.82
+
+The address of the master server is: 
+
+   ndi05 | f8:0f:41:18:4e:95 | 192.168.1.75
+
+## TODO
+
 [ ] simple command scripts
-[ ]     start stream (save PID)
-[ ]     stop stream (needs PID)
+[ ]     start stream
+[ ]     stop stream 
 [ ]     wake on lan
 
-[ ] configure a server to control the machines (good use for the 1 core emachine?)
-
-[ ] reboot / shutdown without sudo
+[ ] website design: include a restart button for the controller
 
 ## use
 
-    bash startmachine.sh 3 # i.e. machine ndi03
+    bash startmachine.sh 78:45:c4:13:be:9e
     bash list_sources.sh
     bash play.sh 'NDI source'
     
@@ -23,4 +39,6 @@
 On the master controller, 
 
     bash sshconfig.sh
+
+
 

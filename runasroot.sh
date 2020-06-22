@@ -20,4 +20,10 @@ if ! sudo grep --quiet "/usr/bin/wakeonlan" /etc/sudoers 2>/dev/null; then
     echo "$TEXT" | sudo EDITOR='tee -a' visudo
 fi
 
+# play command
+if ! sudo grep --quiet "/home/ndi/play.sh" /etc/sudoers 2>/dev/null; then
+    TEXT="`whoami` ALL = NOPASSWD: /home/ndi/play.sh"
+    echo "$TEXT" | sudo EDITOR='tee -a' visudo
+fi
+
 echo "A reboot is required."
