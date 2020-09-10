@@ -1,29 +1,28 @@
 <html>
-  <body>
-  
-    <!-- I can set write access without read access to the jobs folder       -->
-    <!-- https://unix.stackexchange.com/a/22582                              -->
-    <!-- This can help the security of the submitted information             -->
+<head>
+<title>NDI Stream Receiver Management</title>
+</head>
+<body>
 
-    FBCR NDI Stream Management <br> <br>
+Press the button to turn on the computers that receive the NDI stream.  When you confirm the computers are on (about 90 seconds), then press the button to start the stream. Both buttons will control all the NDI receivers.
 
-    <!-- <form action="play_ndi.php" method="get">
-    NDI Stream: <input type="text" name="stream_name">  <input type="submit"  value="Play" >
-    </form>
-   -->
-    <form action="myprocessingscript.php" method="POST">
-      <input name="field1" type="text" />
-      <input type="submit" name="submit" value="Save Data">
-    </form>
+<br> <br>
 
-  </body>
-  </html> 
+<form action="multiple_submit_buttons.php" method="post">
+<input name="btn_submit" value="Power on NDI receivers" type="submit" />
+<br> <br>
+<input name="btn_submit" value="Start NDI stream" type="submit" />
 
-  <!-- send raw to ghostwriter1 for verification of data                     -->
-  <!-- if the phrases and email are good, replace each line with a 1         -->
-  <!-- if not, fail and reset page                                           -->
-  <!-- send good data back to pp01 for fluffing                              -->
+<br> <br>
+CAUTION - these buttons will interrupt the NDI stream!
+<br> <br>
 
-  <!-- note that all this will be replaced after the MVP is done             -->
+<input name="btn_submit" value="Stop NDI stream" type="submit" />
+<br> <br>
+<input name="btn_submit" value="Power off NDI receivers" type="submit" /> 
+</form>
 
+Use the 'stop stream' function to restart the stream in case of a problem.  When the service is concluded, just shut down the computers. No need to stop the stream first.  
 
+</body>
+</html>

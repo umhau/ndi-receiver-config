@@ -4,7 +4,7 @@
 <!-- <?php
 
 $stream_name = $_GET["stream_name"]
-$make_it_work_command = "bash /home/ndi/play.sh " . $stream_name
+$make_it_work_command = "bash /home/ndi/ndi-receiver-config/make_them_work.sh "
 
 exec($make_it_work_command);
 

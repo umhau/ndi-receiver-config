@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# needs to be updated, if still used. 
+
 set v
 
 if [ ! -f $HOME/.ssh/id_rsa ]; then ssh-keygen; fi

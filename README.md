@@ -1,5 +1,11 @@
 # NDI CONTROL
 
+## useful commands
+
+list available NDI sources
+
+  /home/ndi/bin/ffmpeg -f libndi_newtek -find_sources 1 -i dummy
+
 ## hardware addresses 
 
 All logins are 

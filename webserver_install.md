@@ -1,6 +1,4 @@
-# welcome to ghostwriter
-
-un/pw: mal::technologicalconundrumsavvy
+# welcome
 
 ## frontend
 
