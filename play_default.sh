@@ -1,10 +1,12 @@
 #!/bin/bash
 
 set -v
-SOURCE="$1" # "${1@Q}"
+# SOURCE="$1" # "${1@Q}"
+
+# if ffplay is already running, kill it and restart
+if pgrep -f "/home/ndi/bin/ffplay" >/dev/null 2>&1 ; then killall ffplay; fi
 
 # the redirection at the end is necessary to prefent ffmpeg from exiting when run in the background.
-
 # this will have to be modified in some cases - e.g., where hdmi is not the
 # audio channel being used.
 DISPLAY=':0' \
