@@ -1,5 +1,10 @@
 #!/bin/bash
 
-ssh root@192.168.1.112 "shutdown -h now"
-ssh root@192.168.1.108  "shutdown -h now"
-ssh root@192.168.1.31  "shutdown -h now"
+source /home/ndi/ndi-receiver-config/hardware.list
+
+for address in "${ip_addresses[@]}"
+do 
+
+  ssh root@"$address" "shutdown -h now" 
+  
+done

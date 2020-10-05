@@ -14,9 +14,14 @@ All logins are
 
 The addresses of the three (so far) NDI recievers are: 
 
-   ndi02 | 78:45:c4:13:be:9e | 192.168.1.112 | 
-   ndi03 | 00:1d:09:8e:e1:36 | 192.168.1.80  | small screen upstairs
-   ndi04 | c8:1f:66:1c:97:ee | 192.168.1.82
+    ndi02 | 78:45:c4:13:be:9e | 192.168.1.112 | 
+    ndi03 | 00:1d:09:8e:e1:36 | 192.168.1.80  | small screen upstairs
+    ndi04 | c8:1f:66:1c:97:ee | 192.168.1.82
+    ndi01 | 78:45:c4:9:48:39  | 192.168.1.31  | Room 116, far upstairs screen
+
+To get the hardware address of a server, run ifconfig. Remember to enable wake on LAN for each computer.
+
+    
 
 The address of the master server is: 
 
@@ -35,7 +40,7 @@ The address of the master server is:
 
     bash startmachine.sh 78:45:c4:13:be:9e
     bash list_sources.sh
-    bash play.sh 'NDI source'
+    bash ~/play_default.sh
     
 ## setup 
 

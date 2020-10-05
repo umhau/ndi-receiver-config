@@ -1,0 +1,33 @@
+# these are listed in order respective to each other.
+
+total_machines=2 # zero-indexed
+
+declare -a machine_locations
+declare -a ip_addresses
+declare -a mac_addresses
+declare -a hostname_list
+
+machine_locations=(
+  "Gym"
+  "Room 210"
+  "Room 216"
+)
+
+ip_addresses=(
+  192.168.1.112       # ndi04
+  192.168.1.108       # ndi02
+  192.168.1.31        # ndi01 | Room 116
+)
+
+mac_addresses=(
+  c8:1f:66:1c:97:ee   # ndi04
+  78:45:c4:13:be:9e   # ndi02
+  78:45:c4:09:48:39   # ndi01 | Room 116
+  00:1d:09:8e:e1:36   # unknown
+)
+
+hostname_list=(
+  "ndi04"
+  "ndi02"
+  "ndi01"
+)
